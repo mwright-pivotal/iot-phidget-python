@@ -1,0 +1,7 @@
+applications:
+- name: magnetic-synapse
+  instances: 1
+  memory: 128M
+  command: null
+  services:
+  - phidget-messages
