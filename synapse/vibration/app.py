@@ -37,10 +37,10 @@ logging.basicConfig(format=FORMAT)
 def hello_world():
     return 'Hello World! I am running on port ' + str(port)
 
-@app.route('/api/acceleration/<int:deviceid>', methods=['POST'])
-def accelaration_rvc(deviceid):
+@app.route('/api/vibration/<int:deviceid>', methods=['POST'])
+def vibration_rvc(deviceid):
     if not request.json or not 'device' in request.json:
-        logger = logging.getLogger('accel-synapse')
+        logger = logging.getLogger('vibration-synapse')
         logger.warning('Payload no good: %s', request.data)
         abort(400)
     point = {

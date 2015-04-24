@@ -24,6 +24,7 @@ from Phidgets.PhidgetException import PhidgetErrorCodes, PhidgetException
 from Phidgets.Events.Events import SpatialDataEventArgs, AttachEventArgs, DetachEventArgs, ErrorEventArgs
 from Phidgets.Devices.Spatial import Spatial, SpatialEventData, TimeSpan
 from Phidgets.Devices.GPS import GPS
+from logging import INFO
 import urllib, httplib2
 
 accleration_url = 'http://accelerometer-synapse.south.fe.pivotal.io/api/acceleration'
